@@ -34,14 +34,19 @@ This project aims to develop a Generative AI (GenAI) system that automatically g
 **Steps Clone the repository:**
 
 git clone https://github.com/DEVANSARAVANAN/PromptCrafter.git
+
 cd PromptCrafter
+
 
 **Install the required dependencies:**
 
+
 pip install -r requirements.txt
+
 
 **Set up Google GenAI API:**
 Obtain an API key from Google GenAI.
+
 
 Create a .env file in the root directory of the project and add your API key:
 
@@ -49,14 +54,17 @@ Create a .env file in the root directory of the project and add your API key:
 
 GOOGLE_GENAI_API_KEY=your-api-key
 
+
 **Run the application:**
 streamlit run app.py
+
 
 
 **Usage:**
 
 **Run the Streamlit App:**
 streamlit run app.py
+
 
 **Upload Dataset:**
 
@@ -68,15 +76,18 @@ post_text: Content of the post.
 
 category: Label for the post (e.g., "Description," "Definition," "Background Context").
 
+
 **Choose Data Processing Option:**
 
 Unprocessed Data: Preprocess the dataset for better classification.
 
 Processed Data: Use the dataset as-is.
 
+
 **Start Optimization:**
 
 The system will iteratively refine the prompt until the F1 score reaches 95%.
+
 
 **Evaluate Custom Prompts:**
 
