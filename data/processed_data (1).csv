@@ -1,0 +1,58 @@
+post_id,post_text,category
+1,The Montessori method of education is a type of education developed by Italian physician and educator Maria Montessori.,Description or Definition or Background Context
+2,Buckminsterfullerene is a black solid that dissolves to produce a magenta solution.,Description or Definition or Background Context
+6,The regulation of transcription in eukaryotic cells is a complex process.,Description or Definition or Background Context
+7,The length of the rectangle is 10 cm and the width is 5 cm. What is the area of the rectangle?,Question
+8,What is the role of protein in the human body?,Question
+9,What are the main causes of climate change?,Question
+10,What is the difference between a virus and a bacteria?,Question
+11,What is the capital of Australia?,Question
+12,What is the function of the mitochondria in a cell?,Question
+13,"Can someone explain the concept of ""blockchain"" in simple terms?",Request Explanation
+14,I'm having trouble understanding the theory of relativity. Can anyone help?,Request Explanation
+15,Could someone provide a detailed explanation of quantum entanglement?,Request Explanation
+16,I need help understanding the proof of the Pythagorean theorem.,Request Explanation
+17,Can someone explain the difference between machine learning and deep learning?,Request Explanation
+18,"Explain the concept of ""supply and demand"" in economics.",Request Explanation
+19,I am looking for resources on the history of artificial intelligence.,Resource Request
+20,Can anyone recommend a good book on astrophysics?,Resource Request
+21,Where can I find information about the latest advancements in renewable energy?,Resource Request
+22,I need some good websites for learning about data science.,Resource Request
+23,Are there any online courses available for learning web development?,Resource Request
+24,I'm looking for research papers on natural language processing.,Resource Request
+25,I am working on a project to classify different types of flowers using machine learning. What would be the best approach?,Advice Request
+26,I'm trying to improve my public speaking skills. Any tips?,Advice Request
+27,I need advice on how to write a good research proposal.,Advice Request
+28,What is the best way to learn a new programming language?,Advice Request
+29,I'm struggling to manage my time effectively. Any suggestions?,Advice Request
+30,How can I improve my problem-solving skills?,Advice Request
+31,I am trying to find the relationship between A and B. A is increasing and B is decreasing.,Seeking Relationship
+32,What is the correlation between education level and income?,Seeking Relationship
+33,I want to know how exercise affects mental health.,Seeking Relationship
+34,Is there a link between diet and sleep quality?,Seeking Relationship
+35,What is the impact of social media on political polarization?,Seeking Relationship
+36,I'm trying to understand the connection between stress and physical health.,Seeking Relationship
+37,I have a question about the application of a specific theorem in calculus.,Clarification Request
+38,I'm confused about the definition of a limit in calculus.,Clarification Request
+39,I need help understanding a specific line of code in Python.,Clarification Request
+40,I'm not sure how to interpret the results of my statistical analysis.,Clarification Request
+41,Can someone explain the difference between supervised and unsupervised learning?,Clarification Request
+42,I'm having trouble understanding the concept of recursion in programming.,Clarification Request
+43,I have a dataset of customer reviews and I want to perform sentiment analysis. What are some common techniques?,Task Request
+44,I need to build a model to predict stock prices. What algorithms should I consider?,Task Request
+45,I want to create a website using React.js. What are the first steps I should take?,Task Request
+46,I'm working on a project to detect objects in images. What are some popular object detection models?,Task Request
+47,I need to implement a recommendation system for an e-commerce website. What approaches are commonly used?,Task Request
+48,I want to build a chatbot using natural language processing. What tools and libraries are available?,Task Request
+49,I just finished reading a great article about the benefits of meditation.,Sharing Information/Observation
+50,I found a really interesting video explaining the concept of dark matter.,Sharing Information/Observation
+51,I came across a new study that shows a link between coffee consumption and reduced risk of heart disease.,Sharing Information/Observation
+52,I learned a cool trick for solving quadratic equations.,Sharing Information/Observation
+53,I discovered a new website with free online courses on various topics.,Sharing Information/Observation
+55,This is a great community for asking questions and getting help.,Praise/Gratitude
+56,Today I learned that a baby know how to walk before they know how to talk.,Informal post (other)
+57,Can we also include ideas that have not been extensively tested?,Ask for clarification about the topic / scope
+58,"How do you define ""working solution""?",Ask for clarification about the topic / scope
+59,What about historical examples?,Ask for clarification about the topic / scope
+60,What about counterarguments?,Ask for clarification about the topic / scope
+61,Can biomedical engineering homework questions be asked here?,Ask for clarification about the topic / scope
