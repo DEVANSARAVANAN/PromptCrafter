@@ -6,8 +6,11 @@ This project aims to develop a Generative AI (GenAI) system that automatically g
 **Key Features:**
 
 1.Multi-Agent Collaboration: Utilizes four agents (Prompt Creation, Classification, Evaluation, and Feedback Creation) to iteratively refine prompts.
+
 2.High Accuracy: Achieves a 95% macro-average F1 score for text classification.
+
 3.Visualization: Provides interactive charts and graphs for performance analysis.
+
 4.Custom Prompt Evaluation: Allows users to test custom prompts and evaluate their performance.
 
 
@@ -45,6 +48,7 @@ This project aims to develop a Generative AI (GenAI) system that automatically g
 
 
 **Set up Google GenAI API:**
+
 Obtain an API key from Google GenAI.
 
 
@@ -56,6 +60,7 @@ GOOGLE_GENAI_API_KEY=your-api-key
 
 
 **Run the application:**
+
 streamlit run app.py
 
 
@@ -63,12 +68,14 @@ streamlit run app.py
 **Usage:**
 
 **1.Run the Streamlit App:**
+
 streamlit run app.py
 
 
 **2.Upload Dataset:**
 
 **Upload a CSV or XLSX file containing:**
+
 
 post_id: Unique identifier for each post.
 
@@ -96,6 +103,7 @@ Input a custom prompt and evaluate its performance.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Workflow:**
+
 **1.Data Upload and Processing:**
 
 Users upload a dataset via the Streamlit interface.
@@ -124,6 +132,7 @@ The application displays accuracy charts and pie charts for performance analysis
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Agents:**
+
 **1.Prompt Creation Agent:**
 
 Generates and refines prompts for the LLM.
@@ -168,6 +177,7 @@ Reached Target in Different Iterations:
 Modified Model Parameters: Adjusting the temperature parameter to 0.1 improved performance.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Visualization:**
+
 **1.Confusion Matrix Heat Map:**
 
 - Displays predicted vs. actual labels across categories.
