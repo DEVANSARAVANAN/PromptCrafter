@@ -33,24 +33,24 @@ This project aims to develop a Generative AI (GenAI) system that automatically g
 
 **Steps Clone the repository:**
 
-git clone https://github.com/DEVANSARAVANAN/PromptCrafter.git
+- git clone https://github.com/DEVANSARAVANAN/PromptCrafter.git
 
-cd PromptCrafter
+- cd PromptCrafter
 
 
 **Install the required dependencies:**
 
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 **Set up Google GenAI API:**
 Obtain an API key from Google GenAI.
 
 
-Create a .env file in the root directory of the project and add your API key:
+- Create a .env file in the root directory of the project and add your API key:
 
-**.env file:**
+  **.env file:**
 
 GOOGLE_GENAI_API_KEY=your-api-key
 
@@ -59,16 +59,16 @@ GOOGLE_GENAI_API_KEY=your-api-key
 streamlit run app.py
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Usage:**
 
-**Run the Streamlit App:**
+**1.Run the Streamlit App:**
 streamlit run app.py
 
 
-**Upload Dataset:**
+**2.Upload Dataset:**
 
-Upload a CSV or XLSX file containing:
+**Upload a CSV or XLSX file containing:**
 
 post_id: Unique identifier for each post.
 
@@ -77,52 +77,54 @@ post_text: Content of the post.
 category: Label for the post (e.g., "Description," "Definition," "Background Context").
 
 
-**Choose Data Processing Option:**
+**3.Choose Data Processing Option:**
 
-Unprocessed Data: Preprocess the dataset for better classification.
+**Unprocessed Data:** Preprocess the dataset for better classification.
 
-Processed Data: Use the dataset as-is.
+**Processed Data:** Use the dataset as-is.
 
 
-**Start Optimization:**
+**4.Start Optimization:**
 
 The system will iteratively refine the prompt until the F1 score reaches 95%.
 
 
-**Evaluate Custom Prompts:**
+**5.Evaluate Custom Prompts:**
 
 Input a custom prompt and evaluate its performance.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Workflow:**
-**Data Upload and Processing:**
+**1.Data Upload and Processing:**
 
 Users upload a dataset via the Streamlit interface.
 
 The dataset is preprocessed to improve classification accuracy.
 
-**Prompt Optimization:**
+**2.Prompt Optimization:**
 
-**The multi-agent system iteratively refines the prompt:**
+**3.The multi-agent system iteratively refines the prompt:**
 
-Prompt Creation Agent: Generates or refines the prompt.
+- Prompt Creation Agent: Generates or refines the prompt.
 
-Classification Agent: Classifies posts using the prompt.
+- Classification Agent: Classifies posts using the prompt.
 
-**Evaluation Agent:** Calculates the F1 score.
+- Evaluation Agent: Calculates the F1 score.
 
-Feedback Creation Agent: Provides feedback to improve the prompt.
+- Feedback Creation Agent: Provides feedback to improve the prompt.
 
-**Custom Prompt Evaluation:**
+**4.Custom Prompt Evaluation:**
 
 Users can input a custom prompt and evaluate its performance.
 
-**Visualization:**
+**5.Visualization:**
 
 The application displays accuracy charts and pie charts for performance analysis.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Agents:**
-**Prompt Creation Agent:**
+**1.Prompt Creation Agent:**
 
 Generates and refines prompts for the LLM.
 
@@ -130,7 +132,7 @@ Inputs: Dataset, previous prompts, feedback report.
 
 Outputs: Optimized prompt.
 
-**Classification Agent:**
+**2.Classification Agent:**
 
 Uses the LLM to classify posts based on the prompt.
 
@@ -138,7 +140,7 @@ Inputs: Refined prompt, dataset (post_text).
 
 Outputs: Predicted labels.
 
-**Evaluation Agent:**
+**3.Evaluation Agent:**
 
 Measures classification performance.
 
@@ -146,80 +148,78 @@ Inputs: Predicted labels, ground truth labels.
 
 Outputs: Evaluation metrics (confusion matrix, F1 scores).
 
-**Feedback Creation Agent:**
+**4.Feedback Creation Agent:**
 
 Analyzes misclassified posts and generates recommendations for prompt improvement.
 
 Inputs: Current prompt, predicted vs. actual labels, evaluation metrics.
 
 Outputs: Feedback report.
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Model Analysis & Optimization:**
 Testing Model Accuracy: The model reaches the target accuracy within 1 to 12 iterations.
 
 Reached Target in Different Iterations:
 
-Best case: Target reached in 1 iteration.
+- Best case: Target reached in 1 iteration.
 
-Worst case: Target reached in 18 iterations.
+- Worst case: Target reached in 18 iterations.
 
 Modified Model Parameters: Adjusting the temperature parameter to 0.1 improved performance.
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Visualization:**
-**Confusion Matrix Heat Map:**
+**1.Confusion Matrix Heat Map:**
 
-Displays predicted vs. actual labels across categories.
+- Displays predicted vs. actual labels across categories.
 
-Comparison of Precision, Recall, and F1 Score:
+- Comparison of Precision, Recall, and F1 Score:
 
-Bar graph comparing performance metrics.
+- Bar graph comparing performance metrics.
 
-**Comparison of Category Frequencies:**
+**2.Comparison of Category Frequencies:**
 
 Pie chart comparing predicted vs. actual data for each iteration.
 
-**JSON File Structure:**
+**3.JSON File Structure:**
 
 Hierarchical structure of the JSON file for analysis.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Output
-Backend
-Initial Iteration:**
+**Output Backend Initial Iteration:**
 
-Initial Prompt Creation Agent Output.
+- Initial Prompt Creation Agent Output.
 
-Initial Classification Agent Output.
+- Initial Classification Agent Output.
 
-Initial Evaluation Agent Output.
+- Initial Evaluation Agent Output.
 
-Initial Feedback Agent Output.
+- Initial Feedback Agent Output.
 
 **Final Iteration:**
 
-Final Iteration Prompt Creation Agent Output.
+- Final Iteration Prompt Creation Agent Output.
 
-Final Iteration Classification Agent Output.
+- Final Iteration Classification Agent Output.
 
-Final Iteration Evaluation Agent Output.
+- Final Iteration Evaluation Agent Output.
 
-**Frontend
-User Guidance:**
+**Frontend User Guidance:**
 
 Step-by-step instructions for using the tool.
-**
-Final Report and Final Prompt:**
+
+- **Final Report and Final Prompt:**
 
 Displays the final report and prompt after optimization.
 
-**F1 Score Over Iterations:**
+-**F1 Score Over Iterations:**
 
 Graph showing F1 score progression across iterations.
 
-**Confusion Matrix Heatmap:**
+- **Confusion Matrix Heatmap:**
 
 Heatmap showing predicted vs. actual labels.
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
