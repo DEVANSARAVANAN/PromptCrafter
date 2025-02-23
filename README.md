@@ -164,6 +164,7 @@ Obtain an API key from Google GenAI.
   Inputs: Current prompt, predicted vs. actual labels, evaluation metrics.
 
   Outputs: Feedback report.
+  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Model Analysis & Optimization:**
 Testing Model Accuracy: The model reaches the target accuracy within 1 to 12 iterations.
@@ -175,6 +176,7 @@ Reached Target in Different Iterations:
   - Worst case: Target reached in 18 iterations.
 
 Modified Model Parameters: Adjusting the temperature parameter to 0.1 improved performance.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Visualization:**
 
@@ -193,6 +195,7 @@ Modified Model Parameters: Adjusting the temperature parameter to 0.1 improved p
 **3.JSON File Structure:**
 
   Hierarchical structure of the JSON file for analysis.
+  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Output Backend Initial Iteration:**
