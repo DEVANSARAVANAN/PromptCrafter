@@ -20,7 +20,7 @@ class State(TypedDict):
     Final_Report: Dict[str, Any]
 
 def initialize_gemini_client():
-    api_key = os.getenv("API_KEY")
+    api_key = os.getenv("GOOGLE_GENAI_API_KEY")
     client = genai.Client(api_key=api_key)
     return client
 
