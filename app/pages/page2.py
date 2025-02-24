@@ -11,6 +11,7 @@ def run_page2(dataset,custom_prompt):
     evaluate_prompt(state,dataset,custom_prompt)
     st.write(state['accuracy_score']['macro-avg-f1_score'] * 100)
     
+    #Plottings
     display_accuracy_chart(state["Final_Report"])
     pie(state["Final_Report"], dataset)
     bar_chart(state['accuracy_score'])

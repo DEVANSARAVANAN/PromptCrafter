@@ -33,6 +33,7 @@ def preProcessing(dataset):
     print(response.text)
     print('='*200)
 
+    #Cleaning the result
     result=response.text[27::]
     cleaned_lines = [line for line in result.split("\n") if line.count(",") == 2]
     cleaned_result = "\n".join(cleaned_lines)
@@ -40,7 +41,7 @@ def preProcessing(dataset):
     csv_data = StringIO(cleaned_result)
     df = pd.read_csv(csv_data, header=None, names=['post_id', 'post_text', 'category'], on_bad_lines='skip')
     df.to_csv("processed_data.csv", index=False)
-    
+
     dataset=pd.DataFrame(pd.read_csv('processed_data.csv'),columns=['post_id', 'post_text', 'category'])
     print("*"*100)
     return dataset

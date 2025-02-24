@@ -4,6 +4,8 @@ import streamlit as st
 
 def bar_chart(data):
     print("++"*100,"Bar Chart","++"*100)
+
+    #Extract data for plotting
     metrics = []
     for class_name, scores in data['f1-scores'].items():
         metrics.append({
@@ -12,8 +14,12 @@ def bar_chart(data):
             'Recall': scores['recall'],
             'F1 Score': scores['f1-score']
         })
+
     metrics_df = pd.DataFrame(metrics)
     metrics_df = metrics_df.melt(id_vars=['Class'], var_name='Metric', value_name='Score')
+
+
+    #Bar Plot
     fig = px.bar(metrics_df,
                 x='Class',
                 y='Score',

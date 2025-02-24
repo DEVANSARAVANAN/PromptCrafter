@@ -6,6 +6,8 @@ import streamlit as st
 
 def heat_map(data):
     print("++"*100,"Heat Map","++"*100)  
+
+    #Extract data for plotting
     classes = list(data['confusion-matrix'].keys())
     conf_matrix = np.zeros((len(classes), len(classes)), dtype=int)
    
@@ -15,6 +17,8 @@ def heat_map(data):
                 conf_matrix[i, j] = data['confusion-matrix'][actual_class]['predicted'][predicted_class]
 
     conf_df = pd.DataFrame(conf_matrix, index=classes, columns=classes)
+
+    #Plotting Heat Map
     fig = px.imshow(conf_df,
                 labels=dict(x="Predicted", y="Actual", color="Count"),
                 text_auto=True,

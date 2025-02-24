@@ -4,12 +4,13 @@ import streamlit as st
 def display_accuracy_chart(final_report):
     print("++"*100,"Line plot","++"*100,)
 
+    #Extract data for Line plot
     f1_scores_list = [0]
     for iteration_key, iteration_data in final_report.items():  
         f1_scores_list.append(iteration_data['accuracy_score']['macro-avg-f1_score']*100)
     iterations_list=[i for i in range(len(f1_scores_list))]
 
-    
+    #Plotting Line Plot
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=iterations_list,

@@ -32,7 +32,7 @@ def main():
         st.write(st.session_state.dataset)
 
 
-    
+    #Data Processing 
     if st.session_state.dataset is not None:
         with st.expander("Data Processing Options"):
                 if st.button("UnProcessed Data", key="data_processing"):
@@ -44,6 +44,7 @@ def main():
                 if st.button("Processed Data", key="data"):
                     st.session_state.current_dataset =st.session_state.dataset
     
+    #Optimization
     if st.session_state.current_dataset is not None:
         with st.expander("Prompt Optimization Options"):
             if st.button("Start Optimization", key="main_start_optimization"):

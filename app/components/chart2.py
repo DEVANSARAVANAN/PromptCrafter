@@ -6,18 +6,22 @@ import json
 
 def pie(final_report, dataset):
     print("++"*100,"Pie Chart","++"*100)
+
+    #Extract data for plotting
     category_frequencies = {}
     sorted_iteration_keys = sorted(final_report.keys(), key=lambda x: int(x.split('-')[-1]), reverse=True)
 
     for iteration_key in sorted_iteration_keys:
         iteration_data = final_report[iteration_key]
         predictions = iteration_data.get('predictions', '')
+
         if isinstance(predictions, str):
             try:
                 json_start = predictions.find("[")
                 json_end = predictions.rfind("]") + 1
                 predictions_json = predictions[json_start:json_end]
                 predictions_list = json.loads(predictions_json)
+
             except (json.JSONDecodeError, ValueError):
                 print(f"Skipping {iteration_key} due to JSON parsing error.")
                 continue
@@ -33,15 +37,19 @@ def pie(final_report, dataset):
             category = prediction.get("predicted_category")
             if category:
                 category_counts[category] = category_counts.get(category, 0) + 1
+
         category_frequencies[iteration_key] = category_counts
+
     num_iterations = max(len(category_frequencies), 1)  
 
+    # pie Chart
     fig = make_subplots(
         rows=num_iterations,
         cols=2,
         subplot_titles=["Predicted Data", "Actual Data"],
         specs=[[{"type": "domain"}, {"type": "domain"}] for _ in range(num_iterations)]
     )
+
 
     for i, (iteration_key, category_counts) in enumerate(category_frequencies.items(), start=1):
         labels = list(category_counts.keys())
@@ -55,6 +63,7 @@ def pie(final_report, dataset):
         fig.add_trace(go.Pie(labels=category_counts_dataset.index, values=category_counts_dataset.values, hole=0.3, title="Actual Data"), row=1, col=2)
     else:
         print("Dataset is empty or missing 'category' column. Skipping actual data visualization.")
+
 
     fig.update_layout(
         title_text="Comparison of Category Frequencies (Predicted Data & Actual Data)",
