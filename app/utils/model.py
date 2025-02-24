@@ -89,7 +89,10 @@ def prompt_creation_agent(state: State) -> State:
 
     response = client.models.generate_content(
         model="gemini-2.0-flash",
-        contents=formatted_prompt
+        contents=formatted_prompt,
+        config=types.GenerateContentConfig(
+            temperature=0.1,
+        ),
     )
 
     print('=' * 100, "PROMPT CREATION AGENT RESULT", '=' * 100)
@@ -345,7 +348,10 @@ def feedback_creation_agent(state: State) -> State:
 
     response = client.models.generate_content(
         model="gemini-2.0-flash",
-        contents=formatted_prompt
+        contents=formatted_prompt,
+        config=types.GenerateContentConfig(
+            temperature=0.1,
+        ),
     )
 
     print(response.text)
